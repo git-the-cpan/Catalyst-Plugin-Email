@@ -1,18 +1,21 @@
 package Catalyst::Plugin::Email;
 
 use strict;
+use warnings;
+
 use Email::Send;
 use Email::MIME;
 use Email::MIME::Creator;
-use Carp qw/croak/;
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 =head1 NAME
 
-Catalyst::Plugin::Email - Send emails with Catalyst
+Catalyst::Plugin::Email - (DEPRECATED) Send emails with Catalyst
 
 =head1 SYNOPSIS
+
+    # please use Email::MIME::Kit or Catalyst::View::Email::Template instead
 
     use Catalyst 'Email';
 
